@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Protfolio</title>
+        <link rel="icon" href="/imagens/obra.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      </head>
+      
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="/Curriculo/iago_henrique_Curriculo.pdf" class="download-cv">Baixar Currículo</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <!--Sobre mim-->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p class="typed-text"></p>
+      </section>
+      <!--Habilidades-->
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul class="habilidades-lista">
+          <li>Liderança</li>
+          <li>Gestão de projetos</li>
+          <li>Análise técnica</li>
+          <li>Desenvolvimento de sistemas</li>
+          <li>Capacidade de treinamentos</li>
+          <li>Gestão da qualidade</li>
+        </ul>
+      </section>
+      <!--projestos-->
+      <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-container">
+          <div class="projeto">
+            <img src="/imagens/barreiras.png" alt="Imagem do Projeto UFV-Barreiras 449MWp">
+            <h3>UFV-Barreiras 449MWp</h3>
+            <p>Descrição do projeto UFV-Barreiras 449MWp.</p>
+            
+          </div>
+          <div class="projeto">
+            <img src="/imagens/calderão.jpeg" alt="Imagem do Projeto UFV-Calderão Grande Do PI 252MWp">
+            <h3>UFV-Calderão Grande Do PI 252MWp</h3>
+            <p>Descrição do projeto UFV-Calderão Grande Do PI 252MWp.</p>
+            
+          </div>
+          <div class="projeto">
+            <img src="/imagens/fibra.jpeg" alt="Imagem do Projeto Conexão Fibra para Guadalupe-PI">
+            <h3>Conexão Fibra para Guadalupe-PI</h3>
+            <p>Descrição do projeto de conexão de fibra para Guadalupe-PI.</p>
+            
+          </div>
+        </div>
+      </section>
+    <!--contato-->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+          </div>
+      
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <!--minhas redes social-->
+      <section id="redes">
+        <div>
+          <h3>Minhas Redes</h3>
+          <ul class="redes-lista">
+            <li>
+              <a href="https://www.linkedin.com/in/iago-henrique-4b099b120/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/iago099" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <!-- Adicione mais redes sociais -->
+          </ul>
+        </div>
+      </section>
+  </main>
+  <!--final do meu site-->
+  <footer>
+    <p>&copy; Meu Portfólio</p>
+  </footer>
+<!--importando meu script-->
+  <script src="script.js"></script>
+</body>
+</html>

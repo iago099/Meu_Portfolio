@@ -1,0 +1,309 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  header {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 1rem;
+    text-align: center; /* Centraliza o cabeçalho */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centraliza a navegação horizontalmente */
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito chamativo ao passar o mouse */
+  }
+  
+  .download-cv {
+    background-color: #fff;
+    color: #ff7f50;
+    font-weight: bold;
+  }
+  
+  .download-cv:hover {
+    background-color: #ff7f50;
+    color: #fff;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  /*sobre*/
+  #sobre h2 {
+    color: #ff7f50;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .typed-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-right: 2px solid #ff7f50;
+    padding-right: 0.5rem;
+    white-space: pre-wrap; /* Adiciona quebras de linha */
+    overflow: hidden;
+    animation: typing 3s steps(30, end) forwards, blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ff7f50; }
+  }  
+  #habilidades h2 {
+    color: #ff7f50;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .habilidades-lista {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .habilidades-lista li {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .habilidades-lista li:hover {
+    transform: scale(1.1);
+  }
+  #projetos h2 {
+    color: #ff7f50;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .projeto {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .projeto:hover {
+    transform: translateY(-5px);
+  }
+  
+  .projeto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  .projeto h3 {
+    color: #ff7f50;
+    margin-bottom: 1rem;
+  }
+  
+  .projeto p {
+    margin-bottom: 1rem;
+  }
+  
+  .projeto a {
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .projeto a:hover {
+    background-color: #ff6d38;
+  }
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  #contato h2 {
+    color: #ff7f50;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #ff7f50;
+    background-color: #fff;
+    animation: inputFill 0.5s ease forwards;
+  }
+  
+  @keyframes inputFill {
+    0% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: #fff;
+    }
+  }
+  
+  button[type="submit"] {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ff6d38;
+  }
+  #redes {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #redes h3 {
+    color: #ff7f50;
+    margin-bottom: 1rem;
+  }
+  
+  .redes-lista {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .redes-lista li {
+    margin: 0 0.5rem;
+  }
+  
+  .redes-lista a {
+    display: inline-block;
+    color: #ff7f50;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .redes-lista a:hover {
+    transform: translateY(-5px);
+  }
+  @keyframes flutuar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  form input,
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ff7f50; /* Laranja */
+  }
+  
+  footer {
+    background-color: #ff7f50; /* Laranja */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  /* Estilos para telas menores que 768px (dispositivos móveis) */
+@media (max-width: 767px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  }
+  
+  /* Estilos para telas maiores que 768px (tablets e desktops) */
+  @media (min-width: 768px) {
+    /* Estilos já definidos */
+  }
